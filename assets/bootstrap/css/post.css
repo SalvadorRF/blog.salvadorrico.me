@@ -20,3 +20,7 @@ blockquote {
 .indent{
   text-indent: 25px;
 }
+
+.ital{
+  font-style: italic;
+}
