@@ -9,7 +9,7 @@ blockquote {
   box-shadow: 7px 7px 14px -6px rgba(0,0,0,0.29);
 }
 
-blockquote > p > small {
+.refes {
   color: rgb(189, 126, 175);
 }
 
