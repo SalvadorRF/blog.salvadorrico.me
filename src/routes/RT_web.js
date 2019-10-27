@@ -8,8 +8,12 @@ module.exports = (app, path) => {
     res.render('index');
   });
 
-  app.get('/red-flags', (req,res) => {
-    res.render('red-flags')
+  app.get('/posts/:id', (req, res) => {
+    var id = req.params.id;
+    res.render('posts/' + id);
   });
 
+  app.get('/red-flags', (req,res) => {
+    res.render('posts/red-flags')
+  });
 };

@@ -15,7 +15,6 @@
   //-- Confrig --
   const config = require('./src/config/config.json');
 
-
 /*
   SetUp
 */
@@ -39,7 +38,7 @@ app.use(express.urlencoded({extended: false}));
   // -- 404 --
   app.use(function(req,res){  
     res.status(404);
-    res.render('404');
+    res.render('err/404');
   });
 
 /*
