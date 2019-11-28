@@ -16,4 +16,8 @@ module.exports = (app, path) => {
   app.get('/red-flags', (req,res) => {
     res.render('posts/red-flags')
   });
+
+  app.get('/linea', (req,res) => {
+    res.render('lineaTiempo')
+  });
 };
