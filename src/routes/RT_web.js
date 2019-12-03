@@ -20,4 +20,14 @@ module.exports = (app, path) => {
   app.get('/linea', (req,res) => {
     res.render('lineaTiempo')
   });
+
+  app.get('/SeguridadWeb', (req,res) => {
+    res.render('presentaciones/SeguridadWeb')
+  });
+
+  app.get('/presentaciones/:id', (req, res) => {
+    var id = req.params.id;
+    res.render('presentaciones/' + id);
+  });
+
 };
